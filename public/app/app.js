@@ -7,7 +7,11 @@ function initApp() {
     $("footer").html(data);
   });
 
-  $.get("../views/home/home.html", function (data) {
+  changeView("home");
+}
+
+function changeView(viewName) {
+  $.get(`../views/home/${viewName}.html`, function (data) {
     $("#app").html(data);
   });
 }
