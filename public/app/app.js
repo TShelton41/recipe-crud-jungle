@@ -1,13 +1,13 @@
 function initApp() {
-  $.get("../components/nav/nav.html", function (data) {
+  $.get("../views/nav/nav.html", function (data) {
     $("#nav-holder").html(data);
   });
 
-  $.get("../components/footer/footer.html", function (data) {
+  $.get("../views/footer/footer.html", function (data) {
     $("footer").html(data);
   });
 
-  $.get("../components/home/home.html", function (data) {
+  $.get("../views/home/home.html", function (data) {
     $("#app").html(data);
   });
 }
