@@ -1,0 +1,13 @@
+{
+  "name": "recipe-crud-jungle",
+  "version": "1.0.0",
+  "description": "This is a recipe app",
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase serve --only hosting",
+    "deploy": "firebase deploy --except functions",
+    "sass": "node-sass public/sass/styles.scss public/css/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

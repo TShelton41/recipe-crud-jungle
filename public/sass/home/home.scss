@@ -1,0 +1,71 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to right,
+      rgba(242, 92, 84, 0.6),
+      rgba(242, 92, 84, 0.6)
+    ),
+    url("../images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .circle-holder {
+    position: relative;
+    width: 357px;
+    height: 357px;
+
+    .salmon-circle {
+      z-index: 0;
+      position: absolute;
+      width: 167px;
+      height: 167px;
+      background-color: $light-salmon;
+      border-radius: 50%;
+      top: -44px;
+      right: -74px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .text {
+        width: 105px;
+        font-family: LatoRegular;
+        font-size: 10px;
+        font-style: italic;
+        text-align: center;
+      }
+    }
+
+    .yellow-circle {
+      position: absolute;
+      z-index: 1;
+      width: 357px;
+      height: 357px;
+      background-color: $yellow;
+      border-radius: 50%;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .home-circle-title {
+        font-family: CaveatRegular;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      .home-circle-desc {
+        width: 150px;
+        font-family: LatoRegular;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  }
+}

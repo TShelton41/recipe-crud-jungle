@@ -1,0 +1,31 @@
+nav {
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    margin-left: 50px;
+  }
+
+  .links {
+    margin-right: 50px;
+
+    a {
+      font-family: CaveatRegular;
+      text-decoration: none;
+      color: #000;
+      font-size: 25px;
+      margin-right: 35px;
+    }
+
+    .login {
+      padding: 10px 65px;
+      border-radius: 30px;
+      background-color: #ffd972;
+    }
+  }
+}

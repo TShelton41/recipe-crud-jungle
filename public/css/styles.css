@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+#app {
+  min-width: 100vw;
+  min-height: 100vh; }
+
+@font-face {
+  src: url(fonts/Caveat/Caveat-Regular.ttf);
+  font-family: CaveatRegular; }
+
+@font-face {
+  src: url(fonts/Lato/Lato-Regular.ttf);
+  font-family: LatoRegular; }
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url("../images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .home .circle-holder {
+    position: relative;
+    width: 357px;
+    height: 357px; }
+    .home .circle-holder .salmon-circle {
+      z-index: 0;
+      position: absolute;
+      width: 167px;
+      height: 167px;
+      background-color: #fcbcb8;
+      border-radius: 50%;
+      top: -44px;
+      right: -74px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .home .circle-holder .salmon-circle .text {
+        width: 105px;
+        font-family: LatoRegular;
+        font-size: 10px;
+        font-style: italic;
+        text-align: center; }
+    .home .circle-holder .yellow-circle {
+      position: absolute;
+      z-index: 1;
+      width: 357px;
+      height: 357px;
+      background-color: #ffd972;
+      border-radius: 50%;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .home .circle-holder .yellow-circle .home-circle-title {
+        font-family: CaveatRegular;
+        font-weight: bold;
+        font-size: 24px; }
+      .home .circle-holder .yellow-circle .home-circle-desc {
+        width: 150px;
+        font-family: LatoRegular;
+        font-size: 13px;
+        text-align: center; }
+
+nav {
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav .logo {
+    margin-left: 50px; }
+  nav .links {
+    margin-right: 50px; }
+    nav .links a {
+      font-family: CaveatRegular;
+      text-decoration: none;
+      color: #000;
+      font-size: 25px;
+      margin-right: 35px; }
+    nav .links .login {
+      padding: 10px 65px;
+      border-radius: 30px;
+      background-color: #ffd972; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #393939;
+  font-family: LatoRegular;
+  font-style: italic;
+  font-size: 15px; }
+  footer .copy {
+    margin-left: 50px; }
+  footer .links {
+    margin-right: 50px; }
+    footer .links a {
+      text-decoration: none;
+      color: #393939;
+      margin-left: 20px; }
