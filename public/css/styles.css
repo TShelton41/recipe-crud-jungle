@@ -28,6 +28,10 @@ p {
   src: url(fonts/Lato/Lato-Regular.ttf);
   font-family: LatoRegular; }
 
+@font-face {
+  src: url(fonts/Lato/Lato-Black.ttf);
+  font-family: LatoBlack; }
+
 nav {
   height: 120px;
   width: 100%;
@@ -125,24 +129,137 @@ nav {
       justify-content: space-between;
       flex-wrap: wrap; }
       .browse .recipes-container .recipes-wrapper .recipe {
-        margin-bottom: 50px;
-        width: 524px;
-        height: 263px;
-        background-color: green;
-        display: flex; }
-        .browse .recipes-container .recipes-wrapper .recipe-image {
-          border-radius: 24px;
-          overflow: hidden;
-          width: 300px;
-          height: 100%; }
-          .browse .recipes-container .recipes-wrapper .recipe-image img {
+        margin-bottom: 50px; }
+        .browse .recipes-container .recipes-wrapper .recipe .recipe-holder {
+          width: 524px;
+          height: 263px;
+          display: flex; }
+          .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-image {
+            border-radius: 24px;
+            overflow: hidden;
+            width: 300px;
             height: 100%; }
-        .browse .recipes-container .recipes-wrapper .recipe-description {
-          border-radius: 24px;
-          overflow: hidden;
-          width: 224px;
-          height: 100%;
-          background-color: #fff; }
+            .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-image img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              height: 100%;
+              min-width: auto; }
+          .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-description {
+            border-radius: 24px;
+            overflow: hidden;
+            width: 224px;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; }
+            .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-description-title {
+              font-family: LatoBlack;
+              font-weight: bold;
+              font-size: 18px;
+              border-bottom: solid 2px #000; }
+            .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-description-info {
+              width: 108px;
+              font-family: LatoRegular;
+              font-size: 9px; }
+            .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-description-time {
+              display: flex;
+              justify-content: space-between;
+              align-items: center; }
+              .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-description-time img {
+                width: 23px;
+                height: 24.5px; }
+              .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-description-time span {
+                padding-left: 15px;
+                font-family: LatoRegular;
+                font-size: 10px; }
+            .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-description-servings {
+              margin-top: 10px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center; }
+              .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-description-servings img {
+                width: 23px;
+                height: 24.5px; }
+              .browse .recipes-container .recipes-wrapper .recipe .recipe-holder-description-servings span {
+                padding-left: 15px;
+                font-family: LatoRegular;
+                font-size: 10px; }
+        .browse .recipes-container .recipes-wrapper .recipe .edit-delete {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px; }
+          .browse .recipes-container .recipes-wrapper .recipe .edit-delete .edit {
+            background-color: #ffd972;
+            border-radius: 25px;
+            font-family: CaveatRegular;
+            font-size: 20px;
+            padding: 10px 30px;
+            margin-right: 20px; }
+          .browse .recipes-container .recipes-wrapper .recipe .edit-delete .delete {
+            background-color: #ffd972;
+            border-radius: 25px;
+            font-family: CaveatRegular;
+            font-size: 20px;
+            padding: 10px 30px; }
+
+.create-recipe {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  margin-bottom: 100px; }
+  .create-recipe .create-container {
+    width: 75%;
+    margin: 0 auto; }
+    .create-recipe .create-container .title {
+      font-family: CaveatRegular;
+      font-size: 25px;
+      font-weight: bold; }
+    .create-recipe .create-container .create-input-holder input {
+      display: block;
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-bottom: solid 3px #000;
+      margin-top: 30px; }
+    .create-recipe .create-container .create-input-holder .create-recipe-ingredients {
+      margin-top: 100px; }
+      .create-recipe .create-container .create-input-holder .create-recipe-ingredients-title {
+        font-family: LatoBlack;
+        font-size: 20px; }
+    .create-recipe .create-container .create-input-holder .create-recipe-instructions {
+      margin-top: 100px;
+      margin-bottom: 100px; }
+      .create-recipe .create-container .create-input-holder .create-recipe-instructions-title {
+        font-family: LatoBlack;
+        font-size: 20px; }
+    .create-recipe .create-container .create-input-holder .submit {
+      width: 422px;
+      height: 52px;
+      background-color: #efa7a7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: CaveatRegular;
+      font-size: 25px;
+      border-radius: 25px;
+      margin: 0 auto; }
+
+.login {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #ffd972;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 150px; }
 
 footer {
   position: fixed;

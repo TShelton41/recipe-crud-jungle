@@ -15,7 +15,7 @@ function initApp() {
     $("footer").html(data);
   });
 
-  changeView("browse");
+  changeView("home");
 }
 
 function changeView(viewName) {

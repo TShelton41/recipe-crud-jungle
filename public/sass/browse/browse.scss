@@ -33,27 +33,109 @@
       flex-wrap: wrap;
       .recipe {
         margin-bottom: 50px;
-        width: 524px;
-        height: 263px;
-        background-color: green;
-        display: flex;
 
-        &-image {
-          border-radius: 24px;
-          overflow: hidden;
-          width: 300px;
-          height: 100%;
-          img {
+        .recipe-holder {
+          width: 524px;
+          height: 263px;
+          display: flex;
+
+          &-image {
+            border-radius: 24px;
+            overflow: hidden;
+            width: 300px;
             height: 100%;
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              height: 100%;
+              min-width: auto;
+            }
+          }
+
+          &-description {
+            border-radius: 24px;
+            overflow: hidden;
+            width: 224px;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &-title {
+              font-family: LatoBlack;
+              font-weight: bold;
+              font-size: 18px;
+              border-bottom: solid 2px #000;
+            }
+
+            &-info {
+              width: 108px;
+              font-family: LatoRegular;
+              font-size: 9px;
+            }
+
+            &-time {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              img {
+                width: 23px;
+                height: 24.5px;
+              }
+
+              span {
+                padding-left: 15px;
+                font-family: LatoRegular;
+                font-size: 10px;
+              }
+            }
+
+            &-servings {
+              margin-top: 10px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              img {
+                width: 23px;
+                height: 24.5px;
+              }
+
+              span {
+                padding-left: 15px;
+                font-family: LatoRegular;
+                font-size: 10px;
+              }
+            }
           }
         }
 
-        &-description {
-          border-radius: 24px;
-          overflow: hidden;
-          width: 224px;
-          height: 100%;
-          background-color: #fff;
+        .edit-delete {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+
+          .edit {
+            background-color: $yellow;
+            border-radius: 25px;
+            font-family: CaveatRegular;
+            font-size: 20px;
+            padding: 10px 30px;
+            margin-right: 20px;
+          }
+
+          .delete {
+            background-color: $yellow;
+            border-radius: 25px;
+            font-family: CaveatRegular;
+            font-size: 20px;
+            padding: 10px 30px;
+          }
         }
       }
     }

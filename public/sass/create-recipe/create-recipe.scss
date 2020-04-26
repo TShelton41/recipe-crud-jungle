@@ -1,0 +1,65 @@
+.create-recipe {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: $white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  margin-bottom: 100px;
+
+  .create-container {
+    // background-color: red;
+    width: 75%;
+    margin: 0 auto;
+
+    .title {
+      font-family: CaveatRegular;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .create-input-holder {
+      input {
+        display: block;
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: solid 3px #000;
+        margin-top: 30px;
+      }
+
+      .create-recipe-ingredients {
+        margin-top: 100px;
+
+        &-title {
+          font-family: LatoBlack;
+          font-size: 20px;
+        }
+      }
+
+      .create-recipe-instructions {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        &-title {
+          font-family: LatoBlack;
+          font-size: 20px;
+        }
+      }
+
+      .submit {
+        width: 422px;
+        height: 52px;
+        background-color: $salmon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: CaveatRegular;
+        font-size: 25px;
+        border-radius: 25px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
