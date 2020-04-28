@@ -230,15 +230,45 @@ nav {
       border-bottom: solid 3px #000;
       margin-top: 30px; }
     .create-recipe .create-container .create-input-holder .create-recipe-ingredients {
-      margin-top: 100px; }
+      margin-top: 100px;
+      position: relative; }
       .create-recipe .create-container .create-input-holder .create-recipe-ingredients-title {
         font-family: LatoBlack;
         font-size: 20px; }
+      .create-recipe .create-container .create-input-holder .create-recipe-ingredients .add-more {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: #fcbcb8;
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 20px; }
     .create-recipe .create-container .create-input-holder .create-recipe-instructions {
       margin-top: 100px;
-      margin-bottom: 100px; }
+      margin-bottom: 100px;
+      position: relative; }
       .create-recipe .create-container .create-input-holder .create-recipe-instructions-title {
         font-family: LatoBlack;
+        font-size: 20px; }
+      .create-recipe .create-container .create-input-holder .create-recipe-instructions .add-more {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: #fcbcb8;
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        cursor: pointer;
         font-size: 20px; }
     .create-recipe .create-container .create-input-holder .submit {
       width: 422px;

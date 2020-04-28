@@ -31,9 +31,26 @@
 
       .create-recipe-ingredients {
         margin-top: 100px;
+        position: relative;
 
         &-title {
           font-family: LatoBlack;
+          font-size: 20px;
+        }
+
+        .add-more {
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          background-color: $light-salmon;
+          position: absolute;
+          bottom: 15px;
+          right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $white;
+          cursor: pointer;
           font-size: 20px;
         }
       }
@@ -41,9 +58,26 @@
       .create-recipe-instructions {
         margin-top: 100px;
         margin-bottom: 100px;
+        position: relative;
 
         &-title {
           font-family: LatoBlack;
+          font-size: 20px;
+        }
+
+        .add-more {
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          background-color: $light-salmon;
+          position: absolute;
+          bottom: 15px;
+          right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $white;
+          cursor: pointer;
           font-size: 20px;
         }
       }
